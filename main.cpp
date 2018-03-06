@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     DApplication app(argc, argv);
     app.loadTranslator();
     app.setOrganizationName("deepin");
-    app.setApplicationVersion(DApplication::buildVersion("1.0"));
+    //app.setApplicationVersion(DApplication::buildVersion("1.0"));
     app.setApplicationAcknowledgementPage("https://github.com/rekols");
     app.setProductIcon(QIcon(":/images/kugou-music.svg"));
     app.setProductName(DApplication::translate("Main", "酷狗音乐"));

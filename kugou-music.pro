@@ -33,9 +33,9 @@ SOURCES += bottomwidget.cpp \
 
 RESOURCES += kugou-music.qrc
 
-isEmpty(BINDIR):BINDIR=/usr/bin
-isEmpty(APPDIR):APPDIR=/usr/share/applications
-isEmpty(DSRDIR):DSRDIR=/usr/share/kugou-music
+isEmpty(BINDIR):BINDIR=$$PREFIX/bin
+isEmpty(APPDIR):APPDIR=$$PREFIX/share/applications
+isEmpty(DSRDIR):DSRDIR=$$PREFIX/share/kugou-music
 
 target.path = $$INSTROOT$$BINDIR
 icon_files.path = $$PREFIX/share/icons/hicolor/scalable/apps/
