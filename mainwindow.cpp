@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "dthememanager.h"
 #include "dtitlebar.h"
 #include <QDebug>
 #include <QUrl>
@@ -14,6 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
       m_listView(new ListView),
       m_kugouAPI(new KugouAPI)
 {
+    DThemeManager::instance()->setTheme(this, "light");
+    
     if (titlebar()) {
         setShadowOffset(QPoint(0, 0));
         titlebar()->setFixedHeight(45);
