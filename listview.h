@@ -28,7 +28,7 @@
 class ListView : public QTableView
 {
     Q_OBJECT
-    
+
 public:
     ListView(QWidget *parent = nullptr);
     ~ListView();
@@ -39,6 +39,7 @@ public:
 
 signals:
     void downloadActionPress(const int &index);
+    void playActionPress(const int &index);
 
 private:
     QStandardItemModel *m_itemModel;
